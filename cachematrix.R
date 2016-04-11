@@ -1,4 +1,5 @@
-## This code defines  two functions
+## This code defines  two functions makeCacheMatrix and cacheSolve
+## 
 
 
 ## Create a special "matrix", which is a list containing
@@ -7,7 +8,6 @@
 ##   - get the value of the matrix
 ##   - set the value of the inverse matrix
 ##   - get the value of the inverse matrix
-
 makeCacheMatrix <- function(x = matrix())
 {
   i <- NULL
@@ -26,7 +26,6 @@ makeCacheMatrix <- function(x = matrix())
 
 ## Calculate the inverse of the special "matrix" created with the above
 ## function, reusing cached result if it is available
-
 cacheSolve <- function(x, ...) 
 {
   ## Return a matrix that is the inverse of 'x'
